@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-// @RepositoryRestResource annotation to direct Spring MVC to create RESTful endpoints at /people
-//Both the name of the resource and the path can be customized by using @RepositoryRestResource on the repository interface.
+// @RepositoryRestResource annotation to direct Spring MVC to create RESTful endpoints at /people instead of /person
+//Both the name of the resource and the path can be customized by using @RepositoryRestResource on the repository interface
 @RepositoryRestResource(collectionResourceRel = "people", path = "people")
 //MongoRepository provides all the necessary methods which help to create a CRUD application 
 //and it also supports the custom derived query methods.
